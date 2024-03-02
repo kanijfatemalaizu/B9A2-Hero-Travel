@@ -8,7 +8,9 @@ body {
 :root {
   --primary-color: #ff5400;
   --secondary-color: #131318;
-  --light-color: #d2a9d9;
+  --card-bg-color-one: #fffbf7;
+  --card-bg-color-two: #f4fdff;
+  --card-bg-color-three: #fef7f6;
 }
 section {
   display: block;
@@ -190,6 +192,31 @@ select {
   font-weight: 700;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 575px;
+  height: 284px;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 16px;
+  padding: 25px;
+}
+.card-hotel {
+  background-color: var(--card-bg-color-one);
+  border: 3px solid rgba(251, 181, 99, 0.05);
+}
+.card-map {
+  background-color: var(--card-bg-color-two);
+  border: 3px solid rgba(41, 206, 246, 0.2);
+}
+
+.card-price {
+  background-color: var(--card-bg-color-three);
+  border: 3px solid rgba(233, 68, 68, 0.2);
+}
+
 /* media query */
 
 @media only screen and (max-width: 600px) {
@@ -263,7 +290,7 @@ select {
   .grid-container {
     grid-template-columns: repeat(1, 2fr);
   }
-  .img-responsive{
+  .img-responsive {
     height: auto;
     width: 100%;
   }
