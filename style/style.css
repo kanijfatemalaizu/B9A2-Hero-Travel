@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   /* max-width: 1320px; */
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 :root {
   --primary-color: #ff5400;
@@ -218,11 +218,11 @@ select {
   .row {
     flex-direction: column;
   }
-  .popular-tours img {
-    width: 100%;
-    height: auto;
-  }
   .popular-tours {
     padding: 0 20px;
+  }
+  .popular-tours-image {
+    width: 100%;
+    height: auto;
   }
 }
