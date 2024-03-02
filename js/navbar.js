@@ -1,7 +1,7 @@
 const classToggle = () => {
-  const navs = document.querySelectorAll(".nav-items");
+  const navbar = document.querySelectorAll(".nav-items");
   // console.log(navs);
-  navs.forEach((nav) => nav.classList.toggle("nav-toggle-show"));
+  navbar.forEach((nav) => nav.classList.toggle("nav-toggle-show"));
 };
 
 document
