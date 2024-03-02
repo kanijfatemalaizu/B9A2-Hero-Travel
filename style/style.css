@@ -197,7 +197,7 @@ select {
   display: flex;
   flex-direction: column;
   min-width: 575px;
-  height: 284px;
+  min-height: 284px;
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 16px;
@@ -293,5 +293,11 @@ select {
   .img-responsive {
     height: auto;
     width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    min-width: 375px;
+    min-height: 184px;
   }
 }
